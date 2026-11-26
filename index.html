@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Naol | Web Designer</title>
-
-  <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Naol | Web Designer</title>  <style>
     * {
       margin: 0;
       padding: 0;
@@ -72,6 +67,12 @@
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      opacity: 0.8;
+      transform: translateY(-2px);
     }
 
     section {
@@ -104,6 +105,11 @@
       background: #17171d;
       padding: 15px 25px;
       border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      transform: translateY(-3px);
     }
 
     /* PROJECTS */
@@ -132,6 +138,31 @@
       color: #aaa;
     }
 
+    .project .btn {
+      margin-top: 20px;
+    }
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service {
+      background: #17171d;
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    .service h3 {
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      color: #aaa;
+    }
+
     /* CONTACT */
     .contact {
       text-align: center;
@@ -149,6 +180,7 @@
       border-top: 1px solid #222;
     }
 
+    /* MOBILE */
     @media (max-width: 600px) {
       h1 {
         font-size: 36px;
@@ -158,154 +190,166 @@
         font-size: 18px;
       }
     }
-  </style>
-</head>
+  </style></head><body>  <!-- HERO -->  <header class="hero">
+    <div class="container">  <img src="profile.jpg" alt="Naol" class="profile-img">
 
-<body>
+  <h1>Hi, I'm Naol</h1>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="container">
+  <h2>Web Designer & Front-End Developer</h2>
 
-      <!-- Replace profile.jpg with your photo -->
-      <img src="profile.jpg" alt="Naol" class="profile-img">
+  <p>
+    I create clean, responsive and modern websites for businesses,
+    personal brands and individuals.
+  </p>
 
-      <h1>Hi, I'm Naol</h1>
+  <a href="#contact" class="btn">Let's Work Together</a>
 
-      <h2>Web Designer & Front-End Developer</h2>
+</div>
+
+  </header>  <!-- ABOUT -->  <section>
+    <div class="container">  <h2 class="title">About Me</h2>
+
+  <p class="about">
+    I'm a Grade 11 student and aspiring web designer who enjoys
+    creating websites and learning new technologies. I'm focused on
+    building responsive and user-friendly websites using modern
+    front-end technologies.
+  </p>
+
+</div>
+
+  </section>  <!-- SKILLS -->  <section>
+    <div class="container">  <h2 class="title">My Skills</h2>
+
+  <div class="skills">
+
+    <div class="skill">HTML5</div>
+    <div class="skill">CSS3</div>
+    <div class="skill">Responsive Design</div>
+    <div class="skill">Flexbox</div>
+    <div class="skill">CSS Grid</div>
+    <div class="skill">Basic JavaScript</div>
+    <div class="skill">Web Design</div>
+
+  </div>
+
+</div>
+
+  </section>  <!-- PROJECTS -->  <section>
+    <div class="container">  <h2 class="title">My Projects</h2>
+
+  <div class="projects">
+
+    <!-- RESTAURANT -->
+    <div class="project">
+
+      <h3>Restaurant Website</h3>
 
       <p>
-        I create clean, responsive and modern websites for businesses,
-        personal brands and individuals.
+        A modern and responsive restaurant website with a clean
+        design and user-friendly layout.
       </p>
 
-      <a href="#contact" class="btn">Let's Work Together</a>
-
-    </div>
-  </header>
-
-
-  <!-- ABOUT -->
-  <section>
-    <div class="container">
-
-      <h2 class="title">About Me</h2>
-
-      <p class="about">
-        I'm a Grade 11 student and aspiring web designer who enjoys
-        creating websites and learning new technologies. I'm focused on
-        building responsive and user-friendly websites using modern
-        front-end technologies.
-      </p>
-
-    </div>
-  </section>
-
-
-  <!-- SKILLS -->
-  <section>
-    <div class="container">
-
-      <h2 class="title">My Skills</h2>
-
-      <div class="skills">
-        <div class="skill">HTML5</div>
-        <div class="skill">CSS3</div>
-        <div class="skill">Responsive Design</div>
-        <div class="skill">Flexbox</div>
-        <div class="skill">CSS Grid</div>
-        <div class="skill">Basic JavaScript</div>
-        <div class="skill">Web Design</div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- PROJECTS -->
-  <section>
-    <div class="container">
-
-      <h2 class="title">My Projects</h2>
-
-      <div class="projects">
-
-        <div class="project">
-          <h3>Business Website</h3>
-          <p>
-            A modern responsive website designed for a small business.
-          </p>
-        </div>
-
-        <div class="project">
-          <h3>Restaurant Website</h3>
-          <p>
-            A clean restaurant website with menu and contact sections.
-          </p>
-        </div>
-
-        <div class="project">
-          <h3>Personal Portfolio</h3>
-          <p>
-            A responsive portfolio website showcasing skills and projects.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- SERVICES -->
-  <section>
-    <div class="container">
-
-      <h2 class="title">What I Can Do</h2>
-
-      <div class="projects">
-
-        <div class="project">
-          <h3>Landing Pages</h3>
-          <p>Modern landing pages for products and businesses.</p>
-        </div>
-
-        <div class="project">
-          <h3>Business Websites</h3>
-          <p>Professional websites for small businesses.</p>
-        </div>
-
-        <div class="project">
-          <h3>Responsive Design</h3>
-          <p>Websites that work smoothly on phones, tablets and computers.</p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container contact">
-
-      <h2 class="title">Contact Me</h2>
-
-      <p>Email: your-email@example.com</p>
-      <p>Location: Ethiopia</p>
-
-      <a href="mailto: chernetabrham517@gmail.com" class="btn">
-        Contact Me
+      <a
+        href="https://chernetabrham517-rgb.github.io/restaurant-demo/"
+        target="_blank"
+        class="btn">
+        View Project
       </a>
 
     </div>
-  </section>
 
 
-  <footer>
+    <!-- BARBERSHOP -->
+    <div class="project">
+
+      <h3>Barbershop Website</h3>
+
+      <p>
+        A professional barbershop website designed with a modern
+        interface and responsive layout.
+      </p>
+
+      <a
+        href="https://chernetabrham517-rgb.github.io/barbershop-demo/"
+        target="_blank"
+        class="btn">
+        View Project
+      </a>
+
+    </div>
+
+
+    <!-- HOTEL -->
+    <div class="project">
+
+      <h3>Hotel Website</h3>
+
+      <p>
+        A clean and responsive hotel website designed to showcase
+        rooms, services and hotel information.
+      </p>
+
+      <a
+        href="https://chernetabrham517-rgb.github.io/hotel-demo/"
+        target="_blank"
+        class="btn">
+        View Project
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+  </section>  <!-- SERVICES -->  <section>
+    <div class="container">  <h2 class="title">What I Can Do</h2>
+
+  <div class="services">
+
+    <div class="service">
+      <h3>Landing Pages</h3>
+      <p>
+        Modern landing pages for products and businesses.
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>Business Websites</h3>
+      <p>
+        Professional websites for small businesses.
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>Responsive Design</h3>
+      <p>
+        Websites that work smoothly on phones, tablets and computers.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+  </section>  <!-- CONTACT -->  <section id="contact"><div class="container contact">
+
+  <h2 class="title">Contact Me</h2>
+
+  <p>Email: chernetabrham517@gmail.com</p>
+
+  <p>Location: Ethiopia</p>
+
+  <a
+    href="mailto:chernetabrham517@gmail.com"
+    class="btn">
+    Contact Me
+  </a>
+
+</div>
+
+  </section>  <!-- FOOTER -->  <footer>
     © 2026 Naol. All Rights Reserved.
-  </footer>
-
-</body>
+  </footer></body>
 </html>
